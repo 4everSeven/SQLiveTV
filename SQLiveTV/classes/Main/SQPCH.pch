@@ -1,0 +1,26 @@
+//
+//  SQPCH.pch
+//  SQLiveTV
+//
+//  Created by 王思齐 on 16/9/21.
+//  Copyright © 2016年 wangsiqi. All rights reserved.
+//
+
+#ifndef SQPCH_pch
+#define SQPCH_pch
+
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import "SQWebUtils.h"
+
+#define MainColor [UIColor colorWithRed:251/255.0 green:51/255.0 blue:41/255.0 alpha:1]
+#define MainBgColor [UIColor colorWithRed:245/255.0 green:255/255.0 blue:255/255.0 alpha:1]
+#define NaviTintColor [UIColor lightGrayColor]
+#define LoadingImage [UIImage imageNamed:@"主播正在赶来"]
+
+#define SQMargin 10
+
+#define SQSW  ([UIScreen mainScreen].bounds.size.width)
+#define SQSH  ([UIScreen mainScreen].bounds.size.height)
+
+#endif /* SQPCH_pch */
