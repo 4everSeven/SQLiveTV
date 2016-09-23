@@ -59,7 +59,7 @@
     [self addChildViewController:homeNavi];
     [self addChildViewController:catNavi];
     [self addChildViewController:liveNavi];
-    [self addChildViewController:mineNavi];
+   // [self addChildViewController:mineNavi];
     
 }
 

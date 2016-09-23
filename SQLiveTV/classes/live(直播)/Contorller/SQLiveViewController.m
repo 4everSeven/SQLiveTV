@@ -12,6 +12,7 @@
 #import "SQLiveRoomCell.h"
 #import <SVProgressHUD.h>
 #import <MJRefresh.h>
+#import "SQRoomLiveViewController.h"
 @interface SQLiveViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong)UICollectionView *MainCollection;
 @property(nonatomic,strong)NSMutableArray *itemsArray;
@@ -60,6 +61,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+    self.tabBarController.tabBar.hidden = NO;
+}
+
+#pragma mark - 方法 methods
 -(void)setNavi{
     //如果是从栏目中跳转出来的子项目
     if (self.slug) {
@@ -99,8 +107,6 @@
     [collectionView registerClass:[SQLiveRoomCell class] forCellWithReuseIdentifier:@"cell"];
     [self.view addSubview:collectionView];
     self.MainCollection = collectionView;
-    
-   
 }
 
 //加载网络数据
@@ -169,7 +175,10 @@
 
 #pragma mark - UICollection delegateMethods
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    SQRoomLiveViewController *vc = [SQRoomLiveViewController new];
+    SQLiveListItem *item = self.itemsArray[indexPath.row];
+    vc.playUrl = item.playURL;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 //是否支持旋转

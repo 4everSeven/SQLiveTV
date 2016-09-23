@@ -11,6 +11,8 @@
 #import "SQLiveListItem.h"
 #import "SQHeaderBigItem.h"
 #import <MJExtension.h>
+#import "SQRoomLiveViewController.h"
+#import "UIView+SQNavi.h"
 //推荐界面的大滚动视图
 @interface SQHeaderBigCycleView()<SDCycleScrollViewDelegate>
 @property(nonatomic,strong)NSArray *array;
@@ -57,6 +59,16 @@
         [self addSubview:_sdcycle];
     }
     return _sdcycle;
+}
+
+/** 点击图片回调 */
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
+    SQHeaderBigItem *item = self.array[index];
+    NSDictionary *link_object = item.link_object;
+    SQLiveListItem *listItem = [SQLiveListItem mj_objectWithKeyValues:link_object];
+    SQRoomLiveViewController *vc = [SQRoomLiveViewController new];
+    vc.playUrl = listItem.playURL;
+    [[self naviController]pushViewController:vc animated:YES];
 }
 
 

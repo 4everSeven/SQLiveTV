@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541197541D94BD700096463E /* SQSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 541197531D94BD700096463E /* SQSearchViewController.m */; };
+		5434D26B1D950B2000697038 /* SQRoomLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D26A1D950B2000697038 /* SQRoomLiveViewController.m */; };
+		5434D26D1D950E5F00697038 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5434D26C1D950E5F00697038 /* AVFoundation.framework */; };
+		5434D26F1D950E6800697038 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5434D26E1D950E6800697038 /* AVKit.framework */; };
 		5470807F1D921C6800D50DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5470807E1D921C6800D50DD5 /* main.m */; };
 		547080821D921C6800D50DD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 547080811D921C6800D50DD5 /* AppDelegate.m */; };
 		5470808A1D921C6800D50DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 547080891D921C6800D50DD5 /* Assets.xcassets */; };
@@ -32,10 +36,17 @@
 		5470833A1D9376B100D50DD5 /* SQHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 547083381D9376B100D50DD5 /* SQHeaderReusableView.m */; };
 		5470833B1D9376B100D50DD5 /* SQHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 547083391D9376B100D50DD5 /* SQHeaderReusableView.xib */; };
 		5470833E1D93832C00D50DD5 /* SQListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5470833D1D93832C00D50DD5 /* SQListItem.m */; };
+		548E0A641D95842F00CB6850 /* SQPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E0A631D95842F00CB6850 /* SQPlayerView.m */; };
 		B548F07016820369FAF54D80 /* libPods-SQLiveTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 921A45CDEED8B028462AD991 /* libPods-SQLiveTV.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541197521D94BD700096463E /* SQSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSearchViewController.h; sourceTree = "<group>"; };
+		541197531D94BD700096463E /* SQSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQSearchViewController.m; sourceTree = "<group>"; };
+		5434D2691D950B2000697038 /* SQRoomLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRoomLiveViewController.h; sourceTree = "<group>"; };
+		5434D26A1D950B2000697038 /* SQRoomLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRoomLiveViewController.m; sourceTree = "<group>"; };
+		5434D26C1D950E5F00697038 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5434D26E1D950E6800697038 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		5470807A1D921C6800D50DD5 /* SQLiveTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiveTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5470807E1D921C6800D50DD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		547080801D921C6800D50DD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +94,8 @@
 		547083391D9376B100D50DD5 /* SQHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQHeaderReusableView.xib; sourceTree = "<group>"; };
 		5470833C1D93832C00D50DD5 /* SQListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQListItem.h; sourceTree = "<group>"; };
 		5470833D1D93832C00D50DD5 /* SQListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQListItem.m; sourceTree = "<group>"; };
+		548E0A621D95842F00CB6850 /* SQPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQPlayerView.h; sourceTree = "<group>"; };
+		548E0A631D95842F00CB6850 /* SQPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPlayerView.m; sourceTree = "<group>"; };
 		921A45CDEED8B028462AD991 /* libPods-SQLiveTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SQLiveTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0E6A46BFFBB6FE5DB30627 /* Pods-SQLiveTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLiveTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQLiveTV/Pods-SQLiveTV.debug.xcconfig"; sourceTree = "<group>"; };
 		FA14D93AE3500F5D7D351E41 /* Pods-SQLiveTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLiveTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQLiveTV/Pods-SQLiveTV.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5434D26F1D950E6800697038 /* AVKit.framework in Frameworks */,
+				5434D26D1D950E5F00697038 /* AVFoundation.framework in Frameworks */,
 				B548F07016820369FAF54D80 /* libPods-SQLiveTV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +118,8 @@
 		395EB6B4AFA06F8FC6319A14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5434D26E1D950E6800697038 /* AVKit.framework */,
+				5434D26C1D950E5F00697038 /* AVFoundation.framework */,
 				921A45CDEED8B028462AD991 /* libPods-SQLiveTV.a */,
 			);
 			name = Frameworks;
@@ -245,6 +262,8 @@
 			children = (
 				547080B21D9221C600D50DD5 /* SQHomeViewController.h */,
 				547080B31D9221C600D50DD5 /* SQHomeViewController.m */,
+				541197521D94BD700096463E /* SQSearchViewController.h */,
+				541197531D94BD700096463E /* SQSearchViewController.m */,
 			);
 			path = Contorller;
 			sourceTree = "<group>";
@@ -330,6 +349,8 @@
 			children = (
 				547080B81D9221E900D50DD5 /* SQLiveViewController.h */,
 				547080B91D9221E900D50DD5 /* SQLiveViewController.m */,
+				5434D2691D950B2000697038 /* SQRoomLiveViewController.h */,
+				5434D26A1D950B2000697038 /* SQRoomLiveViewController.m */,
 			);
 			path = Contorller;
 			sourceTree = "<group>";
@@ -348,6 +369,8 @@
 			children = (
 				547080D41D92599900D50DD5 /* SQLiveRoomCell.h */,
 				547080D51D92599900D50DD5 /* SQLiveRoomCell.m */,
+				548E0A621D95842F00CB6850 /* SQPlayerView.h */,
+				548E0A631D95842F00CB6850 /* SQPlayerView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -488,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				547080821D921C6800D50DD5 /* AppDelegate.m in Sources */,
+				5434D26B1D950B2000697038 /* SQRoomLiveViewController.m in Sources */,
 				547080B41D9221C600D50DD5 /* SQHomeViewController.m in Sources */,
 				5470833E1D93832C00D50DD5 /* SQListItem.m in Sources */,
 				547080D31D92579200D50DD5 /* SQLiveListItem.m in Sources */,
@@ -504,9 +528,11 @@
 				547080B11D9221A800D50DD5 /* SQMainNaviC.m in Sources */,
 				547083361D93729D00D50DD5 /* SQHeaderCycleCell.m in Sources */,
 				5470832A1D92BA7100D50DD5 /* SQHeaderBigCycleView.m in Sources */,
+				548E0A641D95842F00CB6850 /* SQPlayerView.m in Sources */,
 				5470832D1D92DA2A00D50DD5 /* SQHeaderBigItem.m in Sources */,
 				547080B71D9221DD00D50DD5 /* SQCatagoryViewController.m in Sources */,
 				547080AE1D92218000D50DD5 /* SQMainTabBarC.m in Sources */,
+				541197541D94BD700096463E /* SQSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +568,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -565,7 +592,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -590,6 +617,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -607,7 +635,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -623,9 +651,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SQLiveTV/classes/Main/SQPCH.pch";
 				INFOPLIST_FILE = SQLiveTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangsiqi.SQLiveTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -638,9 +668,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SQLiveTV/classes/Main/SQPCH.pch";
 				INFOPLIST_FILE = SQLiveTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangsiqi.SQLiveTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

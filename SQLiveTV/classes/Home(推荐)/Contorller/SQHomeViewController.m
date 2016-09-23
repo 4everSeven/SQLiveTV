@@ -15,6 +15,8 @@
 #import "SQCatagoryViewController.h"
 #import "SQLiveViewController.h"
 #import "SQListItem.h"
+#import "SQSearchViewController.h"
+#import "SQRoomLiveViewController.h"
 @interface SQHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong)UICollectionView *mainColletionView;
 @property(nonatomic,strong)NSArray *catItems;
@@ -28,7 +30,8 @@
 #pragma mark - 生命周期 lifeCircle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"推荐";
+    //self.title = @"推荐";
+    [self setNavi];
     self.listItems = [NSMutableArray array];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self setCol];
@@ -42,7 +45,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+    self.tabBarController.tabBar.hidden = NO;
+}
+
 #pragma mark - 方法 methods
+//设置导航栏
+-(void)setNavi{
+    self.title = @"推荐";
+    self.navigationController.navigationBar.tintColor = [UIColor lightGrayColor];
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"搜索_默认"] style:UIBarButtonItemStylePlain target:self action:@selector(gotoSearch)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+}
+
+//设置主要的collectionView
 -(void)setCol{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
    // layout.sectionInset = UIEdgeInsetsMake(0, SQMargin, 0, SQMargin);
@@ -62,6 +80,7 @@
     
 }
 
+//加载网络数据
 -(void)loadData{
     [SQWebUtils requestAllItemWithCompletion:^(NSArray *obj1, NSDictionary *obj2) {
         self.listItems = [obj1 mutableCopy];
@@ -82,6 +101,12 @@
         vc.name = item.name;
         [self.navigationController pushViewController:vc animated:YES];
     }
+}
+
+//跳转到搜索界面
+-(void)gotoSearch{
+    SQSearchViewController *vc = [SQSearchViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UIColletionViewDataSource delegateMethods
@@ -134,6 +159,29 @@ else{
 }
 
 #pragma mark - UICollectoinViewDelegate delegateMethods
+//跳转到直播界面
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    SQRoomLiveViewController *vc = [SQRoomLiveViewController new];
+    SQListItem *listItem = nil;
+    if (self.listItems.count > 0) {
+        listItem = self.listItems[indexPath.section - 1];
+    }
+    NSArray *rooms = [self.allData objectForKey:listItem.slug];
+    if (indexPath.section == 1) {
+        NSDictionary *dic = rooms[indexPath.row];
+        NSDictionary *linkDic = dic[@"link_object"];
+        SQLiveListItem *item = [SQLiveListItem mj_objectWithKeyValues:linkDic];
+        vc.playUrl = item.playURL;
+    }
+    else{
+        NSDictionary *linkDic = rooms[indexPath.row];
+        NSDictionary *link = linkDic[@"link_object"];
+        SQLiveListItem *item = [SQLiveListItem mj_objectWithKeyValues:link];
+        vc.playUrl = item.playURL;
+}
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     
     SQHeaderReusableView *view = nil;
@@ -153,12 +201,9 @@ else{
                 [view.rightButton setTitle:@"瞅瞅" forState:UIControlStateNormal];
                 [view.rightButton setImage:[UIImage imageNamed:@"栏目_默认"] forState:UIControlStateNormal];
             }
-            
         }
         return view;
-        
     }
-    
     return view;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{

@@ -9,5 +9,11 @@
 #import "SQLiveListItem.h"
 
 @implementation SQLiveListItem
+-(NSURL *)playURL{
+    if (_playURL == nil) {
+        _playURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://hls.quanmin.tv/live/%@/playlist.m3u8",self.uid]];
 
+    }
+    return _playURL;
+}
 @end

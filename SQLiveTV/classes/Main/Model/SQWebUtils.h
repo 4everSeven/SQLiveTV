@@ -22,4 +22,6 @@ typedef void(^BBlock) (NSArray *obj1,NSDictionary *obj2);
 +(void)requestSectionHeaderItemsWithCompletion:(Block)block;
 //获取推荐界面的所有数据
 +(void)requestAllItemWithCompletion:(BBlock)block;
+//获取搜索的结果
++(void)requestRoomItemsWithName:(NSString *)name andCallback:(Block)block;
 @end
