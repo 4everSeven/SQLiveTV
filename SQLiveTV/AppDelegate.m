@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "SQMainTabBarC.h"
+#import <RongIMLib/RongIMLib.h>
+
 @interface AppDelegate ()
 
 @end
@@ -24,7 +26,13 @@
     [self. window makeKeyAndVisible];
     //设置根视图控制器 ---必写(注意，这里的根视图控制器要自定，看情况)
     self.window.rootViewController=[[SQMainTabBarC alloc]init];
-
+ 
+    //初始化Bmob
+    [Bmob registerWithAppKey:@"7331678d426e14e06e250dee9f69145a"];
+    //初始化融云
+    [[RCIMClient sharedRCIMClient]init:@"25wehl3uw2o5w"];
+    
+    
     return YES;
 }
 

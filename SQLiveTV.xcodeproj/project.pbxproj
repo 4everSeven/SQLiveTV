@@ -37,6 +37,14 @@
 		5470833B1D9376B100D50DD5 /* SQHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 547083391D9376B100D50DD5 /* SQHeaderReusableView.xib */; };
 		5470833E1D93832C00D50DD5 /* SQListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5470833D1D93832C00D50DD5 /* SQListItem.m */; };
 		548E0A641D95842F00CB6850 /* SQPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E0A631D95842F00CB6850 /* SQPlayerView.m */; };
+		54E398AA1D97D763003CF6D5 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E398A51D97D763003CF6D5 /* SignInViewController.m */; };
+		54E398AB1D97D763003CF6D5 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E398A61D97D763003CF6D5 /* SignInViewController.xib */; };
+		54E398AC1D97D763003CF6D5 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E398A81D97D763003CF6D5 /* SignUpViewController.m */; };
+		54E398AD1D97D763003CF6D5 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E398A91D97D763003CF6D5 /* SignUpViewController.xib */; };
+		54E398AF1D97D76A003CF6D5 /* avator.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E398AE1D97D76A003CF6D5 /* avator.png */; };
+		54E398B31D97E883003CF6D5 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E398B01D97E883003CF6D5 /* Mine.storyboard */; };
+		54E398B41D97E883003CF6D5 /* MineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E398B21D97E883003CF6D5 /* MineTableViewController.m */; };
+		54E398B71D97E897003CF6D5 /* HFStretchableTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E398B61D97E897003CF6D5 /* HFStretchableTableHeaderView.m */; };
 		B548F07016820369FAF54D80 /* libPods-SQLiveTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 921A45CDEED8B028462AD991 /* libPods-SQLiveTV.a */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +104,18 @@
 		5470833D1D93832C00D50DD5 /* SQListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQListItem.m; sourceTree = "<group>"; };
 		548E0A621D95842F00CB6850 /* SQPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQPlayerView.h; sourceTree = "<group>"; };
 		548E0A631D95842F00CB6850 /* SQPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPlayerView.m; sourceTree = "<group>"; };
+		54E398A41D97D763003CF6D5 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		54E398A51D97D763003CF6D5 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		54E398A61D97D763003CF6D5 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		54E398A71D97D763003CF6D5 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		54E398A81D97D763003CF6D5 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		54E398A91D97D763003CF6D5 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		54E398AE1D97D76A003CF6D5 /* avator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator.png; sourceTree = "<group>"; };
+		54E398B01D97E883003CF6D5 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		54E398B11D97E883003CF6D5 /* MineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableViewController.h; sourceTree = "<group>"; };
+		54E398B21D97E883003CF6D5 /* MineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableViewController.m; sourceTree = "<group>"; };
+		54E398B51D97E897003CF6D5 /* HFStretchableTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFStretchableTableHeaderView.h; sourceTree = "<group>"; };
+		54E398B61D97E897003CF6D5 /* HFStretchableTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFStretchableTableHeaderView.m; sourceTree = "<group>"; };
 		921A45CDEED8B028462AD991 /* libPods-SQLiveTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SQLiveTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0E6A46BFFBB6FE5DB30627 /* Pods-SQLiveTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLiveTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQLiveTV/Pods-SQLiveTV.debug.xcconfig"; sourceTree = "<group>"; };
 		FA14D93AE3500F5D7D351E41 /* Pods-SQLiveTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLiveTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQLiveTV/Pods-SQLiveTV.release.xcconfig"; sourceTree = "<group>"; };
@@ -225,9 +245,19 @@
 		5470809D1D9220A500D50DD5 /* Contorller */ = {
 			isa = PBXGroup;
 			children = (
+				54E398B01D97E883003CF6D5 /* Mine.storyboard */,
+				54E398B11D97E883003CF6D5 /* MineTableViewController.h */,
+				54E398B21D97E883003CF6D5 /* MineTableViewController.m */,
 				547080BB1D92221D00D50DD5 /* SQMineTableViewController.h */,
 				547080BC1D92221D00D50DD5 /* SQMineTableViewController.m */,
 				547080BD1D92221D00D50DD5 /* SQMineTableViewController.xib */,
+				54E398A41D97D763003CF6D5 /* SignInViewController.h */,
+				54E398A51D97D763003CF6D5 /* SignInViewController.m */,
+				54E398A61D97D763003CF6D5 /* SignInViewController.xib */,
+				54E398A71D97D763003CF6D5 /* SignUpViewController.h */,
+				54E398A81D97D763003CF6D5 /* SignUpViewController.m */,
+				54E398A91D97D763003CF6D5 /* SignUpViewController.xib */,
+				54E398AE1D97D76A003CF6D5 /* avator.png */,
 			);
 			path = Contorller;
 			sourceTree = "<group>";
@@ -242,6 +272,8 @@
 		5470809F1D9220A500D50DD5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				54E398B51D97E897003CF6D5 /* HFStretchableTableHeaderView.h */,
+				54E398B61D97E897003CF6D5 /* HFStretchableTableHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -349,8 +381,8 @@
 			children = (
 				547080B81D9221E900D50DD5 /* SQLiveViewController.h */,
 				547080B91D9221E900D50DD5 /* SQLiveViewController.m */,
-				5434D2691D950B2000697038 /* SQRoomLiveViewController.h */,
 				5434D26A1D950B2000697038 /* SQRoomLiveViewController.m */,
+				5434D2691D950B2000697038 /* SQRoomLiveViewController.h */,
 			);
 			path = Contorller;
 			sourceTree = "<group>";
@@ -449,8 +481,12 @@
 			files = (
 				547080CD1D922F0200D50DD5 /* Podfile in Resources */,
 				5470833B1D9376B100D50DD5 /* SQHeaderReusableView.xib in Resources */,
+				54E398AF1D97D76A003CF6D5 /* avator.png in Resources */,
+				54E398B31D97E883003CF6D5 /* Mine.storyboard in Resources */,
+				54E398AD1D97D763003CF6D5 /* SignUpViewController.xib in Resources */,
 				5470808D1D921C6800D50DD5 /* LaunchScreen.storyboard in Resources */,
 				547080BF1D92221D00D50DD5 /* SQMineTableViewController.xib in Resources */,
+				54E398AB1D97D763003CF6D5 /* SignInViewController.xib in Resources */,
 				5470808A1D921C6800D50DD5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E398B41D97E883003CF6D5 /* MineTableViewController.m in Sources */,
 				547080821D921C6800D50DD5 /* AppDelegate.m in Sources */,
 				5434D26B1D950B2000697038 /* SQRoomLiveViewController.m in Sources */,
 				547080B41D9221C600D50DD5 /* SQHomeViewController.m in Sources */,
@@ -521,14 +558,17 @@
 				547080BE1D92221D00D50DD5 /* SQMineTableViewController.m in Sources */,
 				5470807F1D921C6800D50DD5 /* main.m in Sources */,
 				547080C81D922E4E00D50DD5 /* SQWebUtils.m in Sources */,
+				54E398AC1D97D763003CF6D5 /* SignUpViewController.m in Sources */,
 				547080CB1D922EED00D50DD5 /* SQCatCellItem.m in Sources */,
 				547083331D936C7100D50DD5 /* UIView+SQNavi.m in Sources */,
 				547080BA1D9221E900D50DD5 /* SQLiveViewController.m in Sources */,
 				547080D61D92599900D50DD5 /* SQLiveRoomCell.m in Sources */,
 				547080B11D9221A800D50DD5 /* SQMainNaviC.m in Sources */,
+				54E398AA1D97D763003CF6D5 /* SignInViewController.m in Sources */,
 				547083361D93729D00D50DD5 /* SQHeaderCycleCell.m in Sources */,
 				5470832A1D92BA7100D50DD5 /* SQHeaderBigCycleView.m in Sources */,
 				548E0A641D95842F00CB6850 /* SQPlayerView.m in Sources */,
+				54E398B71D97E897003CF6D5 /* HFStretchableTableHeaderView.m in Sources */,
 				5470832D1D92DA2A00D50DD5 /* SQHeaderBigItem.m in Sources */,
 				547080B71D9221DD00D50DD5 /* SQCatagoryViewController.m in Sources */,
 				547080AE1D92218000D50DD5 /* SQMainTabBarC.m in Sources */,

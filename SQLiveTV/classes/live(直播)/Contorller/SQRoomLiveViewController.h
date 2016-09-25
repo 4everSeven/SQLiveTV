@@ -10,6 +10,7 @@
 
 @interface SQRoomLiveViewController : UIViewController
 @property(nonatomic,strong)NSURL *playUrl;
+@property(nonatomic,strong)NSString *uid;
 
 
 

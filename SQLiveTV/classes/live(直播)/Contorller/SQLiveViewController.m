@@ -178,6 +178,7 @@
     SQRoomLiveViewController *vc = [SQRoomLiveViewController new];
     SQLiveListItem *item = self.itemsArray[indexPath.row];
     vc.playUrl = item.playURL;
+    vc.uid = item.uid;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

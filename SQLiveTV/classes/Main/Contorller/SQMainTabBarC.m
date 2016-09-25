@@ -12,6 +12,7 @@
 #import "SQCatagoryViewController.h"
 #import "SQLiveViewController.h"
 #import "SQMineTableViewController.h"
+#import "MineTableViewController.h"
 
 @interface SQMainTabBarC ()
 
@@ -51,7 +52,8 @@
     liveNavi.tabBarItem.image = [UIImage imageNamed:@"发现_默认"];
     [liveNavi.tabBarItem setSelectedImage:[UIImage imageNamed:@"发现_焦点"]];
     //我的
-    SQMainNaviC *mineNavi = [[SQMainNaviC alloc]initWithRootViewController:[SQMineTableViewController new]];
+    MineTableViewController *vc = [[UIStoryboard storyboardWithName:@"Mine" bundle:nil]instantiateViewControllerWithIdentifier:@"mine"];
+    SQMainNaviC *mineNavi = [[SQMainNaviC alloc]initWithRootViewController:vc];
     mineNavi.title = @"我的";
     mineNavi.tabBarItem.image = [UIImage imageNamed:@"我的_默认"];
     [mineNavi.tabBarItem setSelectedImage:[UIImage imageNamed:@"我的_焦点"]];
@@ -59,7 +61,7 @@
     [self addChildViewController:homeNavi];
     [self addChildViewController:catNavi];
     [self addChildViewController:liveNavi];
-   // [self addChildViewController:mineNavi];
+    [self addChildViewController:mineNavi];
     
 }
 

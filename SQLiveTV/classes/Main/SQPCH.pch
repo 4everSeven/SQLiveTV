@@ -12,6 +12,7 @@
 #import <MJExtension.h>
 #import <UIImageView+WebCache.h>
 #import "SQWebUtils.h"
+#import <BmobSDK/Bmob.h>
 
 #define MainColor [UIColor colorWithRed:251/255.0 green:51/255.0 blue:41/255.0 alpha:1]
 #define MainBgColor [UIColor colorWithRed:245/255.0 green:255/255.0 blue:255/255.0 alpha:1]

@@ -14,8 +14,10 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BmobSDK (1.7.2)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
+  - RongCloudIMLib (2.4.0)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
   - SDWebImage (3.8.2):
@@ -25,20 +27,24 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - BmobSDK
   - MJExtension
   - MJRefresh
+  - RongCloudIMLib (= 2.4.0)
   - SDCycleScrollView (~> 1.64)
   - SDWebImage (~> 3.8)
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BmobSDK: e188cb31d6a8417ab668aee821da227d7512b865
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  RongCloudIMLib: d1135d63d7aea753a23c87b7ca3c9bd04771d3df
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: a9fb2ae5ffd817589db689f1f717ebcdb43c71a0
+PODFILE CHECKSUM: f9ed4cc42aed6594815276b304175b187fef9c46
 
 COCOAPODS: 1.0.1

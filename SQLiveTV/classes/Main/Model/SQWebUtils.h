@@ -24,4 +24,6 @@ typedef void(^BBlock) (NSArray *obj1,NSDictionary *obj2);
 +(void)requestAllItemWithCompletion:(BBlock)block;
 //获取搜索的结果
 +(void)requestRoomItemsWithName:(NSString *)name andCallback:(Block)block;
+//获取融云token
++(void)requestTokenWithUserId:(NSString *)userId name:(NSString *)name portraitUri:(NSString *)portraitUri Completion:(Block)block;
 @end
